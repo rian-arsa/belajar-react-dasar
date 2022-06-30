@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Component</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+     <!-- REACT -->
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <!-- REACT DOM -->
+     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     <!-- Load Babel -->
+     <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+     <!-- Your custom script here -->
+     <script type="text/babel"> // BABEL digunakan mengkonver jsx ke js
+ 
+        const root = document.getElementById("root")
+
+        // Membuat React component dengan menggunakan huruf besar pada huruf pertama
+        function Halo(props) {
+            return <p>Halo <b>{props.name}</b>, nama Saya Rian Arsa</p>
+        }
+
+        const element = (
+            <>
+                <Halo name="Bagas"/>
+                <Halo name="Bagus"/>
+                <Halo name="Kahfi"/>
+            </>
+        )
+       
+        ReactDOM.render(element, root)
+    </script>
+</body>
+</html>
