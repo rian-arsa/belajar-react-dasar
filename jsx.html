@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Element</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <!-- REACT -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- REACT DOM -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel"> // BABEL digunakan mengkonver jsx ke js
+        const root = document.getElementById("root")
+
+        // const element = ( // membuat html dengan jsx (ini bukan syntax html, ini jsx)
+        //     <ul>
+        //         <li>Apple</li>    
+        //         <li>Grape</li>    
+        //         <li>Orange</li>    
+        //     </ul>
+        // )
+        
+        // const name = "Rian Ari"
+        // const element = (
+        //     <p>{name}</p> // Untuk mengambil data bisa menggunakan {}
+        // )
+        
+        // const element = <h1 className="heading-1">Rian Arsa</h1> // Langsung menambahkan class
+
+        // const className = "heading-1"
+        // const element = <h1 className={className}>Rian Ari</h1>
+        
+        // HTML empty atau html yng tidak memiliki penutup
+        const element = <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/20220121%E2%80%94Sana_%EC%82%AC%EB%82%98_Campaign_Film%2C_Pearlygates_x_Twice_2022.jpg" alt="" width="100px" />
+
+
+        ReactDOM.render(element, root)
+    </script>
+</body>
+</html>
